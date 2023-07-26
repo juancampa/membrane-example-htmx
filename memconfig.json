@@ -1,0 +1,11 @@
+{
+  "tags": ["example", "htmx", "endpoint", "form"],
+  "schema": {
+    "types": [
+      {
+        "name": "Root",
+        "actions": []
+      }
+    ]
+  }
+}
