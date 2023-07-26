@@ -4,6 +4,7 @@
     "types": [
       {
         "name": "Root",
+        "description": "Serves an interactive htmx-based page on its endpoint.",
         "actions": []
       }
     ]
