@@ -1,7 +1,7 @@
 import { state } from "membrane";
 
 // `state` is an object that persists across program updates. Store data here.
-state.contact = {
+state.contact = state.contact ?? {
   first: "John",
   last: "Doe",
   email: "john@example.com",
@@ -24,6 +24,7 @@ export async function endpoint({ args }) {
     case "/edit":
       return formFragment();
   }
+  return JSON.stringify({ status: 404 });
 }
 
 // Renders the entire page
