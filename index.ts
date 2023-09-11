@@ -11,11 +11,11 @@ export const Root = {
   status: async () => {
     const url = await nodes.process.endpointUrl;
     return `[Open](${url})`;
-  }
+  },
 };
 // The endpoint action is invoked whenever the program's URL endpoint is accessed
 // Right-click on the program in the sidebar and "Open Endpoint URL"
-export async function endpoint({ args }) {
+export async function endpoint(args) {
   switch (args.path) {
     case "/":
       return home();
